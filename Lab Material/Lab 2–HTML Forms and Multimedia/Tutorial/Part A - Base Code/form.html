@@ -9,18 +9,75 @@
 
 <body>
 
-    <form action="">
-        <div>
-            <label for="">Name</label>
-            <input type="text">
-        </div>
+    <form>
 
-        <div>
-            <label for="">Age</label>
-            <input type="number">
-        </div>
 
+
+
+
+        <fieldset>
+            <legend>Word</legend>
+
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="enter your name">
+            </div>
+
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="0" max="150">
+            </div>
+
+            <input type="date">
+            <input type="color">
+
+            <div>
+                <label for="">Gender</label>
+                <label for="">Female</label><input type="radio" name="gender" id="female">
+                <label for="">Male</label><input type="radio" name="gender" id="male">
+            </div>
+
+            <div>
+                <label for="">Fav Food</label>
+                Burger<input type="checkbox" name="fav_food">
+                Pizza<input type="checkbox" name="fav_food">
+                Machboos<input type="checkbox" name="fav_food">
+            </div>
+
+            <select name="" id="">
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+            </select>
+
+            <select name="favCar" id="">
+                <optgroup label="German Cars">
+                    <option value="1">BMW</option>
+                    <option value="2">Mercedez</option>
+                </optgroup>
+
+                <optgroup label="Japan Cars">
+                    <option value="">Toyota</option>
+                    <option value="">Mitsubishi</option>
+                </optgroup>
+
+                <option value="">Another Value</option>
+            </select>
+
+            <br>
+            <input list="clubs">
+            <datalist id="clubs">
+                <option value="Man United">
+                <option value="Barcelona">
+                <option value="Real Madrid">
+                <option value="Bayern Munich">
+            </datalist>
+
+        </fieldset>
+
+        <input type="submit">
     </form>
+
 </body>
 
 </html>
