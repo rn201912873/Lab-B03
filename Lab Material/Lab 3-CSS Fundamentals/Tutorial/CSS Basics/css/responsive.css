@@ -1,0 +1,23 @@
+.box {
+    width: 60px;
+    height: 50px;
+    outline: auto;
+    margin: 3px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: red;
+    color: white;
+    flex-grow: 1;
+}
+
+.container {
+    height: 450px;
+    outline: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: end;
+    align-items: start;
+    flex-wrap: wrap;
+}
