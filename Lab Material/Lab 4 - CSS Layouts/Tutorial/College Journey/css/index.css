@@ -68,7 +68,20 @@ main {
                 margin-top: 1rem;
             }
 
+            #campus-involvement ol {
+                margin: 1rem;
+            }
 
+
+            table {
+
+                
+
+                .table-title {
+                    background-color: brown;
+                    color: white;
+                }
+            }
         }
     }
 }
