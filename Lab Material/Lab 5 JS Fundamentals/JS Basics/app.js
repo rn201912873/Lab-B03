@@ -201,4 +201,33 @@ const students = [
 
 // Array Methods and Arrow Functions
 
-console.log(students[0]
+// What is the age of Rashid
+// const s = students.find(student => student.name === "Rashid")
+// // console.log(s.age);
+
+// // // Find the average age of all the students
+// // const avg = students.reduce((sum, student) => sum + student.age, 0) / students.length
+// // console.log("avg", avg);
+
+// // const nums = [1, 2, 30, 4, 5, 6]
+// // const total = nums.reduce((total, curr) => total + curr)
+
+// // // round 1
+// // total = 1, curr = 2, total = total + curr, total = 0 + 1 = 1
+// // total = 3, ncurrm = 30, total = total + curr, total = 1 + 2 = 3
+// // total = 3, curr = 30, total = total + curr, total = 3 + 30 = 33
+
+// // find the oldest student
+
+
+// const oldest = students.reduce((acc, curr) => acc.age > curr.age ? acc : curr)
+// // console.log(oldest);
+
+// console.log("oldest ", students.sort((a, b) => b.age - a.age)[0]);
+// console.log("youngest ", students.sort((a, b) => a.age - b.age)[0]);
+
+// console.log(students.map(a => a.name));
+
+const matrix = [[2, 3], [34, 89], [55, 101, 34], [34, 89, 34, 99]]
+
+console.log(Math.max(...matrix.flat(Infinity)));
