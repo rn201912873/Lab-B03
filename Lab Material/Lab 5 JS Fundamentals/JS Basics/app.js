@@ -46,31 +46,40 @@
 // `);
 
 
-const arr = [1, -2, -3, 41, 15, 86, 71, 8, 9, 10]
+// const arr = [1, -2, -3, 41, 112, 113, 11, 15, 86, 871, 71, 8, 9, 10]
 
-// add an element to the end
-console.log("Before the push", arr)
-arr.push(100)
-console.log("After the arr.push(100)", arr)
+// // add an element to the end
+// console.log("Before the push", arr)
+// arr.push(100)
+// console.log("After the arr.push(100)", arr)
 
-// add an element to the beginning  
-console.log("Before the unshift", arr)
-arr.unshift(0)
-console.log("After the arr.unshift(0)", arr)
+// // add an element to the beginning  
+// console.log("Before the unshift", arr)
+// arr.unshift(0)
+// console.log("After the arr.unshift(0)", arr)
 
-// remove from the last
-console.log("Before the pop", arr)
-arr.pop()
-console.log("After the arr.pop()", arr)
+// // remove from the last
+// console.log("Before the pop", arr)
+// arr.pop()
+// console.log("After the arr.pop()", arr)
 
-// remove from the begining
-console.log("Before the shift", arr)
-arr.shift()
-console.log("After the arr.shift()", arr)
+// // remove from the begining
+// console.log("Before the shift", arr)
+// arr.shift()
+// console.log("After the arr.shift()", arr)
 
+// // console.table(arr);
 
+// // remove from any location
 
+// console.log("Before the splice", arr)
+// arr.splice(2, 1)
+// console.log("After the arr.splice(2, 1)", arr)
 
+// // sorting
+// console.log("Before the sort", arr)
+// // arr.sort((a, b) => b - a) --concl.
+// console.log("Sorted", arr);
 
 
 
