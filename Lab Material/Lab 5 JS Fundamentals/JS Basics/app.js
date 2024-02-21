@@ -1,3 +1,4 @@
+
 // console.log("Welcome to JS");
 // // declare variables in JS
 
@@ -199,3 +200,5 @@ const students = [
 ]
 
 // Array Methods and Arrow Functions
+
+console.log(students[0]
