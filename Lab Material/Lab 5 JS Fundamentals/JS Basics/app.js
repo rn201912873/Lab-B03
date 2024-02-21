@@ -231,3 +231,13 @@ const students = [
 const matrix = [[2, 3], [34, 89], [55, 101, 34], [34, 89, 34, 99]]
 
 console.log(Math.max(...matrix.flat(Infinity)));
+// const names = []
+// for (const s of students) {
+//     names.push(returnName(s))
+// }
+// console.log(names);
+
+const num = [1, 2, 3, 4, 5]
+
+const squaredNums = num.map(square)
+// const squaredNums = num.map(square)
