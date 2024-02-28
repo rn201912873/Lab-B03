@@ -1,3 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-bg: #388E3C;
+    --header-bg: #8BC34A;
+    --nav-gb: #C2185B;
+    --main-bg: #757575;
+    --footer-bg: #E91E63;
+}
+
 body {
-    background-color: aquamarine;
+    color: white;
+}
+
+.container {
+    background-color: var(--container-bg);
+
+    .header {
+        background-color: var(--header-bg);
+    }
+
+    .nav {
+        background-color: var(--nav-gb);
+    }
+
+    .main {
+        background-color: var(--main-bg);
+    }
+
+    .footer {
+        background-color: var(--footer-bg);
+    }
+
+
 }
