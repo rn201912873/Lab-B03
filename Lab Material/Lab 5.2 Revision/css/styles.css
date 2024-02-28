@@ -21,6 +21,7 @@ body {
 .container {
     /* background-color: var(--container-bg); */
     display: grid;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: auto auto 1fr auto;
 
     outline: auto;
@@ -30,22 +31,28 @@ body {
 
     .header {
         background-color: var(--header-bg);
+        grid-column: 1/-1;
     }
 
     .nav {
         background-color: var(--nav-gb);
-    }
-
-    .main {
-        background-color: var(--main-bg);
+        grid-column: 1/-1;
     }
 
     .aside {
         background-color: var(--aside-bg);
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .main {
+        background-color: var(--main-bg);
+        /* grid-column: 2/3; */
     }
 
     .footer {
         background-color: var(--footer-bg);
+        grid-column: span 2;
     }
 
 }
