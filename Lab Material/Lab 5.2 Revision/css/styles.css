@@ -9,15 +9,24 @@
     --header-bg: #8BC34A;
     --nav-gb: #C2185B;
     --main-bg: #757575;
+    --aside-bg: #4b15ec;
     --footer-bg: #E91E63;
 }
 
 body {
     color: white;
+    /* height: 100vh; */
 }
 
 .container {
-    background-color: var(--container-bg);
+    /* background-color: var(--container-bg); */
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+
+    outline: auto;
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 70vh;
 
     .header {
         background-color: var(--header-bg);
@@ -31,9 +40,12 @@ body {
         background-color: var(--main-bg);
     }
 
+    .aside {
+        background-color: var(--aside-bg);
+    }
+
     .footer {
         background-color: var(--footer-bg);
     }
-
 
 }
