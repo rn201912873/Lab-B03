@@ -35,6 +35,25 @@ export function getAccount(accountNo) {
     return accounts.find(account => account.accountNo === accountNo)
 }
 export function deleteAccount(accountNo) {
-    const index = accounts.findIndex(account => account.accountNo === accountNo)
+    const index = accounts
+        .findIndex(account => account.accountNo === accountNo)
     accounts.splice(index, 1)
 }
+
+export function sumBalance() {
+    return accounts.reduce((acc, account) => acc + account.balance, 0)
+}
+
+export function averageBalance() {
+    return sumBalance() / accounts.length
+}
+
+export function toJson() {
+    return JSON.stringify(accounts)
+}
+
+export function fromJson(json) {
+    return JSON.parse(json)
+}
+
+console.log(toJson());
