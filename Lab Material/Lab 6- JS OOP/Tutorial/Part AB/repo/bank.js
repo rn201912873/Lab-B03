@@ -10,6 +10,10 @@ const accounts = [
         type: 'current'
     }
 ]
-function getAccounts() {
+export function getAccounts() {
     return accounts;
+}
+
+export function addAccount(account) {
+    accounts.push(account);
 }
