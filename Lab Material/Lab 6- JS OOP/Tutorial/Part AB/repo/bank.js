@@ -27,6 +27,14 @@ export function deposit(accountNo, amount) {
 export function withdraw(accountNo, amount) {
     const account = accounts.find(account => account.accountNo === accountNo)
     if (!account || amount > account.balance) return false
-    account.balance += amount
+    account.balance -= amount
     return true
+}
+
+export function getAccount(accountNo) {
+    return accounts.find(account => account.accountNo === accountNo)
+}
+export function deleteAccount(accountNo) {
+    const index = accounts.findIndex(account => account.accountNo === accountNo)
+    accounts.splice(index, 1)
 }
