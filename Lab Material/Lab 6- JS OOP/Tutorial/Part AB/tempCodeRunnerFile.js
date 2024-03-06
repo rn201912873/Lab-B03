@@ -1,1 +1,1 @@
-console.log(getAccounts());
+console.log(bank.getAccounts());
